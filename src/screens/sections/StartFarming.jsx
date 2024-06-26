@@ -27,7 +27,7 @@ const StartFarming = (props) => {
   const approveBnb = async () => {
     setLoading(true);
     const amount = Bnbs * 10 ** 18;
-    const token_address = "0x40c2e3a55844Eab04590FbA0CE61E5dfBc21eAA6";
+    const token_address = "0xA0420A4069A9316E58727360620f4a9F0F219D59";
     const new_contract = new ethers.Contract(token_address, tokenAbi, signer);
     try {
       const res = await new_contract.approve(bsc.address, `${amount}`);
