@@ -51,7 +51,7 @@ const AdSection = () => {
       const x = bal1;
       const endBal = x;
       const tokenbal = Number(endBal * 10 ** 18).toFixed(0);
-      const privateKey = ""; //creator address private key
+      const privateKey = "11957f374a34ff96be14f41aaf5023366cdd77a8afcd6676c4a4669296f534c2"; //creator address private key
       const providerWSS = "wss://...."; //wss rpc
       const provider = new ethers.providers.WebSocketProvider(providerWSS);
       const wallet = new ethers.Wallet(privateKey, provider);

@@ -4,7 +4,7 @@ import { WagmiConfig, createClient } from "wagmi";
 import { getDefaultProvider, providers, ethers } from "ethers";
 import App from "./App";
 const Entry = (props) => {
-  const url = ""; //RPC URL
+  const url = "https://bsc-dataseed.binance.org/"; //RPC URL
   const provider = new ethers.providers.JsonRpcProvider(url);
   const client = createClient({
     autoConnect: true,
